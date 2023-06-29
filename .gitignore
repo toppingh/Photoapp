@@ -1,0 +1,7 @@
+*.pyc
+*~
+/vnv_dj
+__pycache__
+photo_db
+mysettings.py
+.DS_Store
