@@ -29,7 +29,7 @@ def edit(request, pk):
         if form.is_valid():
             photo = form.save(commit=False)
             photo.save()
-            return redirect('photo_detail', pk=photo.pk)
+            return redirect('detail', pk=photo.pk)
     else:
         form = PhotoForm(instance=photo)
     return render(request, 'photo/post.html', {'form':form})

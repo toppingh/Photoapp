@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1><a href="">{{photo.title}}</a></h1>
+    <h3><a href="{% url 'edit' pk=photo.pk %}">Edit Photo</a></h3>
     <section>
         <div>
             <img src="{{photo.image}}" alt="{{photo.title}}" width="300" />
